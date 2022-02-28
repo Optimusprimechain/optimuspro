@@ -1,0 +1,15 @@
+.subhero {
+  height: 30vh;
+  padding: 2rem;
+  position: relative;
+  background: #012241;
+  background-image: linear-gradient(to right, #063894, #5f79ac);
+}
+
+
+@media (max-width: 768px) {
+  .subhero {
+    height: 20vh;
+    padding: 2rem;
+  }
+}

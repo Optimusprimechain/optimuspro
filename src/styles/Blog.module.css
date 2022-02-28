@@ -1,0 +1,27 @@
+.blog {
+  width: 60%;
+  margin: 4rem auto;
+}
+
+.blog p {
+  font-size: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.blogImg {
+  position: relative;
+  /* width: 70%; */
+  height: 380px;
+  margin: 2rem auto;
+}
+
+.subTitle {
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}

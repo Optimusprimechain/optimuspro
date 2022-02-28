@@ -1,0 +1,59 @@
+.section {
+  margin: 4rem auto;
+  width: 90%;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  height: 40vh;
+}
+
+.imgCover {
+  position: relative;
+}
+
+.content {
+  padding: 10px 3rem;
+}
+.content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.content h5 {
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+
+.content .date {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #555555;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    height: 100%;
+  }
+
+  .imgCover {
+    position: relative;
+    height: 200px;
+  }
+
+  .content {
+    padding: 10px 1rem;
+  }
+}
+

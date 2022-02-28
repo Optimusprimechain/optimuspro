@@ -1,0 +1,177 @@
+.hero {
+  height: 45vh;
+  position: relative;
+  background-image: linear-gradient(to right, #000611, #d7dce6);
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  gap: 30px;
+  color: #fff;
+}
+
+.hero .content {
+  width: 80%;
+  position: relative;
+}
+.hero .video {
+  height: 100%;
+  width: 90%;
+  background: #fff;
+  box-shadow: 1px -1px 10px rgb(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+.hero h2 {
+  font-weight: 900;
+  /* color: #131313; */
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.hero p {
+  margin: 1rem 0;
+  /* color: #131313; */
+  font-size: 1rem;
+}
+
+.hero small {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.imgCard {
+  position: relative;
+  height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #011227ad;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playIcon {
+  font-size: 3rem;
+  color: #eee;
+  box-shadow: 1px -1px 10px rgb(0, 0, 0, 0.2);
+  transition: all 0.4s ease-in;
+}
+
+.playIcon:hover {
+  font-size: 3.5rem;
+}
+
+.cardBody {
+  padding: 1rem;
+  display: block;
+  color: #131313;
+}
+
+.cardBody .amount {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.cardBody .free {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #5197ee;
+}
+
+.cardBody .button {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.button {
+  border: solid 1px #5197ee;
+  padding: 10px;
+  background: #5197ee;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.learn {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
+  gap: 30px;
+  padding: 2rem;
+}
+
+.learnCard {
+  border: solid 1px #ccc;
+  padding: 1rem;
+  background: #fff;
+}
+
+.learnCard h4 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 0.7rem;
+}
+
+.learnCard .list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+.list ul li {
+  font-size: 0.8rem;
+  line-height: 1.7;
+  display: flex;
+  align-items: center;
+}
+
+.list ul li .icon {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 45vh;
+    position: relative;
+    background-image: linear-gradient(to right, #000611, #737780);
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    color: #fff;
+    margin-bottom: 23rem;
+  }
+
+  .hero .content {
+    width: 100%;
+    position: relative;
+  }
+  .hero .video {
+    height: 100%;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .learn {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 2rem;
+  }
+
+  .list ul li {
+    margin-bottom: 10px;
+  }
+}

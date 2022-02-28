@@ -1,0 +1,627 @@
+html,
+body {
+  padding: 0;
+  background: #f8f8f8;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.showNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+}
+
+.dropCard {
+  position: absolute;
+  width: 20%;
+  line-height: 2;
+  z-index: 9 !important;
+}
+
+.dropCard1 {
+  position: absolute;
+  width: 100%;
+  line-height: 2;
+  z-index: 9 !important;
+}
+
+.mobileToggle {
+  font-size: 1.5rem;
+  display: none;
+}
+
+.bg-gradient {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 97, 215, 1) 0%,
+    rgba(0, 200, 255, 1) 100%
+  );
+}
+
+.top-bar-gradient {
+  height: 4px;
+  background: linear-gradient(
+    318deg,
+    rgba(176, 0, 171, 1) 0%,
+    rgba(143, 140, 255, 1) 100%
+  );
+}
+
+.opacity-10 {
+  opacity: 0.1;
+}
+
+.nato-sans {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.hero {
+  height: 80vh;
+  overflow: hidden;
+}
+
+.hero img {
+  height: 60vh;
+}
+
+.blogHero {
+  height: 40vh;
+  overflow: none;
+}
+
+.blogHero img{
+  height: 40vh;
+  overflow: none;
+}
+
+.link {
+  color: #333;
+  font-size: 0.9rem;
+}
+
+
+.mobileScreen {
+  display: none;
+}
+
+
+.container {
+  width: 90% !important;
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+
+.courseSection {
+  background: #ccc;
+}
+
+.pageContainer {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+.pageContainer h2 {
+  z-index: 1;
+}
+
+.webinarCard {
+  background: red;
+  position: relative;
+}
+
+.signupFormContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #ffff;
+  height: 90vh;
+}
+
+.formSection {
+  background: #fff;
+}
+
+.formBg img {
+  height: 90vh;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: #ffff;
+}
+
+.webinar {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  border-radius: 1rem;
+}
+
+.webinar img {
+  height: 85vh;
+}
+
+.webinar:hover {
+  border-radius: 3rem;
+}
+
+.courseSection {
+  position: relative;
+  overflow: hidden;
+  height: 70vh;
+}
+
+.courseSection img {
+  object-fit: cover;
+  height: 70vh;
+}
+
+.iconBox {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  border: solid 2px #5197ee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconSize {
+  font-size: 2.5rem;
+  color: #5197ee;
+}
+
+.customerSection {
+  background: #fff;
+  overflow-y: hidden;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.customerCard {
+  background: #fff;
+  box-shadow: 1px -1px 10px rgb(0, 0, 0, 0.2);
+  border-top: solid 5px #5197ee;
+  border-right: solid 5px #5197ee;
+  transition: all 0.2s ease-in;
+  color: #333;
+  border-radius: 6px;
+  padding: 20px;
+  transition: all 0.2s ease-in;
+  z-index: 1;
+}
+
+.customerCard:hover {
+  border-bottom: solid 5px #5197ee;
+  border-top: none;
+  border-left: solid 5px #5197ee;
+  border-right: none;
+}
+
+.customerCard:nth-child(even) {
+  margin-top: 3rem;
+  border-bottom: solid 5px #5197ee;
+  border-top: none;
+  border-right: solid 5px #5197ee;
+}
+
+.customerCard img {
+  border-radius: 50%;
+}
+
+.customerCard p {
+  font-size: 0.9rem;
+}
+
+.cardHead {
+  margin: 0.5rem 0;
+  color: #5197ee;
+}
+
+.cardHead .username {
+  font-weight: 900;
+}
+
+.circleBox {
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: #e2edfa;
+  position: absolute;
+  top: 0;
+  left: -300px;
+  z-index: 0;
+}
+
+.blogGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.blogCard {
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  /* box-shadow: 1px -1px 10px rgb(0, 0, 0, 0.2); */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  position: relative;
+  border-right: solid 5px #5197ee;
+  transition: all 0.2s ease-in;
+}
+
+.blogCard:hover {
+  /* border-right: solid 10px #5197ee; */
+  box-shadow: 1px -1px 10px rgb(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.blogCard:hover .content .blogTitle {
+  color: #5197ee;
+
+}
+
+.bloglink {
+  font-size: 0.9rem;
+  color: #5197ee;
+  margin-top: 2rem;
+  position: absolute;
+  bottom: 1rem;
+}
+
+.blogCard img {
+  border-radius: 6px;
+}
+
+.imgContainer {
+  position: relative;
+}
+
+.blogCard .content .date{
+  font-weight: 900;
+  font-size: 0.8rem;
+  color: #868686;
+}
+.blogCard .content .blogTitle{
+  font-weight: 900;
+  margin: 0.7rem 0;
+  font-size: 1rem;
+  line-height: 1;
+  color: #333;
+  transition: all 0.2s ease-in;
+}
+
+.showAll {
+  font-weight: 700;
+  color: #5197ee;
+  font-size: 1.2rem;
+}
+
+.blogCard .content .des {
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  line-height: 1.1;
+}
+
+footer {
+  background-image: linear-gradient(to right, #04286b, #487be0);
+}
+
+.footer {
+  margin: 0 auto;
+  width: 80%;
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer .footercol {
+  display: flex;
+  justify-content: center;
+}
+
+.footer a {
+  display: block;
+  margin-bottom: 16px;
+  color: #eee;
+}
+
+.minFooter {
+  text-align: center;
+  background: #001d53;
+  color: #ccc;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.icons .icon {
+  font-size: 2rem;
+  color: #001938;
+}
+
+progress[value] {
+  appearance: none !important;
+}
+
+
+textarea {
+  border: solid 1px #ccc;
+  width: 100%;
+  padding: 1rem !important;
+  border-radius: 6px;
+}
+
+.heroContainer {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+}
+
+.heroContainer .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #021335, #021335c9, #487be041);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 2rem 5rem;
+}
+
+.heroContainer .content {
+  color: #fff;
+  width: 60%;
+  margin: 0 left;
+}
+
+.heroContainer .content h1 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+
+@media (max-width: 768px) {
+
+  .heroContainer {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+  }
+
+  .heroContainer .overlay {
+    padding: 2rem;
+  }
+
+  .heroContainer .content {
+    color: #fff;
+    width: 100%;
+    margin: 0 left;
+  }
+
+  .heroContainer .content h1 {
+    font-size: 1.8rem;
+    line-height: 1.1;
+  }
+
+  .blogGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin-top: 3rem;
+  }
+
+  .blogCard {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    border-right: none;
+    border-top: solid 8px #5197ee;
+  }
+
+  .imgContainer {
+    position: relative;
+    height: 20vh;
+  }
+
+  .cardGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    position: relative;
+  }
+
+  .customerCard {
+    padding: 10px;
+  }
+
+  .customerCard img {
+    height: 60px !important;
+    width: 60px !important;
+    border-radius: 50%;
+  }
+
+  .signupFormContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background: #ffff;
+    height: 100%;
+  }
+  .formBg {
+    display: none;
+  }
+
+  .courseSection {
+    height: 50vh;
+  }
+  
+  .courseSection img {
+    height: 50vh;
+  }
+
+  .webinar {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+  }
+  
+  .webinar img {
+    height: 50vh;
+  }
+
+  .gridContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  background: #ffff;
+}
+
+  .container {
+    width: 90% !important;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+
+  .hero {
+    height: 60vh;
+    overflow: none;
+  }
+
+  .blogHero {
+    height: 40vh;
+    overflow: none;
+  }
+
+  .blogHero img{
+    height: 40vh;
+    overflow: none;
+  }
+
+  .hero img {
+    height: 60vh;
+    object-fit: cover;
+  }
+
+  .mobileScreenShow {
+    display: none !important;
+  }
+
+  .mobileScreen {
+    display: block;
+  }
+
+  .navLink {
+    display: block;
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding: 2rem 1rem;
+    line-height: 3;
+    z-index: 3;
+    border-top: solid 5px #5197ee;
+    font-size: 1.2rem;
+    transform: translateX(0%);
+    transition: all 0.1s ease-in;
+  }
+
+  .navLink a {
+    display: block;
+  }
+
+  .showNav {
+    transform: translateX(-100%);
+    display: block;
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 3;
+    padding: 2rem 1rem;
+    line-height: 2;
+    border-top: solid 5px #5197ee;
+    font-size: 1.3rem;
+    transition: all 0.1s ease-in;
+  }
+
+  .showNav a {
+    display: block;
+  }
+
+  
+  .dropCard {
+    position: absolute;
+    width: 100%;
+    line-height: 2;
+  }
+  
+  .mobileToggle {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(
+    135deg,
+    rgba(0, 97, 215, 1) 0%,
+    rgba(0, 200, 255, 1) 100%
+  );
+  color: #fff;
+  border-radius: 4px;
+  }
+
+
+  .footer {
+    margin: 0 auto;
+    width: 100%;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer a {
+    display: block;
+    margin-bottom: 14px;
+    color: #eee;
+    font-size: 0.8rem;
+  }
+}
+

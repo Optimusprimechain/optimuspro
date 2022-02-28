@@ -1,4 +1,4 @@
-import '../styles/globals.css'
+import '@/styles/globals.css'
 import 'tailwindcss/tailwind.css'
 import { Toaster } from 'react-hot-toast'
 import { AuthProvider } from '@/context/AuthProvider'

@@ -11,15 +11,16 @@ export default function CourseSections({}) {
     <section className='courseSection'>
       <div className='pageContainer'>
         <PageTitle title="Let's start learning, John" />
+        <hr />
       </div>
 
       <div className='gridContainer'>
-        <div className='courseSection relative bg-blue-900'>
-          <div className='opacity-10'>
+        <div className='courseCard'>
+          <div className='courseImg'>
             <Image layout='fill' src={slider1Img} alt='Home' />
           </div>
-          <div className='absolute left-0 top-20 mt-10 lg:mt-10 sm:px-12 px-6 nato-sans'>
-            <div className='w-full'>
+          <div className='overlay'>
+            <div className='content'>
               <h1 className='text-gray-200 text-2xl lg:text-3xl sm:text-3xl font-bold leading-tight'>
                 Explore our Beginner to Advance Forex Coures
               </h1>
@@ -33,12 +34,12 @@ export default function CourseSections({}) {
             </div>
           </div>
         </div>
-        <div className='courseSection bg-gray-900'>
-          <div className='opacity-10'>
+        <div className='courseCard'>
+          <div className='courseImg'>
             <Image layout='fill' src={slider2Img} alt='Home' />
           </div>
-          <div className='absolute left-0 top-20 mt-10 lg:mt-10 sm:px-12 px-6 nato-sans'>
-            <div className='w-full'>
+          <div className='overlay'>
+            <div className='content'>
               <h1 className='text-gray-200 text-2xl lg:text-3xl sm:text-3xl font-bold leading-tight'>
                 Explore our Beginner to Advance Cryptocurency Coureses
               </h1>

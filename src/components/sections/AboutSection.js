@@ -1,7 +1,7 @@
 import PageTitle from '../common/PageTitle'
 import Image from 'next/image'
 import abatImage from '@/public/images/slider2.jpeg'
-import Link from 'next/link'
+import style from '@/styles/about.module.css'
 import GradientLink from '../common/GradientLink'
 
 export default function AboutSections({}) {
@@ -11,7 +11,7 @@ export default function AboutSections({}) {
 
         <div className="mt-10">
           <dl className='space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-10 md:gap-y-10'>
-            <div className='relative'>
+            <div className={style.aboutImage}>
               <Image
                 alt='AboutImge'
                 layout="fill"

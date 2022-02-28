@@ -1,5 +1,5 @@
 import Layout from '@/components/Layout'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { Form, Formik } from 'formik'
 import * as Yup from 'yup'
 import Card from '@/components/common/Card'
@@ -12,6 +12,7 @@ import FormError from '@/components/form/FormError'
 import style from '@/styles/login.module.css'
 import heroImg from '@/public/images/signup.webp'
 import Image from 'next/image'
+import { FetchContext } from '@/context/FetchProvider';
 
 const SignupSchema = Yup.object().shape({
   fullName: Yup.string().required('First name is required'),
@@ -24,6 +25,24 @@ export default function ProfilePage({}) {
   const [isError, setIsError] = useState()
   const [isLoading, setIsLoading] = useState(false)
   const [redirectOnLogin, setRedirectOnLogin] = useState(false)
+  const [userData, setUserData] = useState(null)
+  const fetchContext = useContext(FetchContext);
+
+  useEffect(() => {
+    const getUserData = async () => {
+      try {
+        const { data } = await fetchContext.authAxios.get(
+          'user'
+        );
+        setUserData(data);
+        console.log(data)
+      } catch (err) {
+        console.log(err);
+      }
+    };
+
+    getUserData();
+  }, [fetchContext]);
 
   const submitCredentials = async (credentials) => {
     try {

@@ -13,42 +13,42 @@ export default function Footer({}) {
       <div className='footer'>
         <div className='footercol'>
           <div>
-            <Link href=''>
+            <Link href='/'>
               <a>Home</a>
             </Link>
-            <Link href=''>
+            <Link href='/'>
               <a>About</a>
             </Link>
-            <Link href=''>
+            <Link href='/'>
               <a>Contact</a>
             </Link>
           </div>
         </div>
         <div className='footercol'>
           <div>
-            <Link href=''>
+            <Link href='/'>
               <a>Forex courses</a>
             </Link>
-            <Link href=''>
+            <Link href='/'>
               <a>Crypto Courses</a>
             </Link>
-            <Link href=''>
+            <Link href='/'>
               <a>Blog</a>
             </Link>
           </div>
         </div>
         <div className='footercol'>
           <div>
-            <Link href=''>
+            <Link href='/'>
               <a>Twitter</a>
             </Link>
-            <Link href=''>
+            <Link href='/'>
               <a>Instagram</a>
             </Link>
-            <Link href=''>
+            <Link href='/'>
               <a>Facebook</a>
             </Link>
-            <Link href=''>
+            <Link href='/'>
               <a>Telegram</a>
             </Link>
           </div>

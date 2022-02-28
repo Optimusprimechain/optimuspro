@@ -107,7 +107,7 @@ export default function SubscriptionSection() {
                   ${item.amount}
                 </h2>
 
-                <GradientLink href="/" size="lg" text="Subscribe Now" />
+                <GradientLink href={`/subscription/${item.id}`} size="lg" text="Subscribe Now" />
               </div>
               <div className={style.cardBody}>
                 <h2 className='text-sm my-4 font-bold leading-6 text-dark'>
